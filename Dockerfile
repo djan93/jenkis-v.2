@@ -1,10 +1,10 @@
 FROM python:3.6.7
 
-COPY . /app
+COPY ./app /app/
 
-WORKDIR /app
+WORKDIR /app/
 
-RUN pip3 install -r app/requirements.txt
+RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "python" ]
 

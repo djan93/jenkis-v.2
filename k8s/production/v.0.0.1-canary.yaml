@@ -21,7 +21,7 @@ spec:
         ports:
         - containerPort: 4000
       imagePullSecrets:
-      - name: mysecret
+      - name: deploy-auth
 ---
 apiVersion: v1
 kind: Service
